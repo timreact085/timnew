@@ -1,0 +1,35 @@
+/* Styles for the product cards */
+
+  
+  /* Hide the "Add to Cart" button by default */
+  .addToCartBtn {
+    visibility: hidden;
+    transform: scale(0); /* Start with a scale of 0 to hide the button */
+    transition: visibility 0s, transform 0.3s ease-in-out;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Apply styles to the button when hovering over the product card container */
+  .productCardContainer:hover  {
+    background-color: blue;
+    
+   
+   
+  }
+
+  .cardproduct{
+    height: 350px;
+    text-align: center;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .cardproduct:hover  {
+    background-color: #fff;
+    color: green;
+    height: 400px;
+    .addToCartBtn {
+        margin-top: 10px;
+        visibility: visible;
+        transform: scale(1); 
+      }
+  }
